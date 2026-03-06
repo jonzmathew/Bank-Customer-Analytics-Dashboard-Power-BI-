@@ -148,7 +148,7 @@ Data Storytelling
 
 📎 Project File
 
-The Power BI dashboard file is available in this repository named "banking data.pbix"
+The Power BI dashboard file is available in this repository named "Bank Analytics.pbix"
 
 
 Open the file using Power BI Desktop to interact with the dashboard.
