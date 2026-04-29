@@ -1,168 +1,415 @@
-# Bank-Loan Disbursement-Analytics-Dashboard-Power-BI-
-This project analyzes banking data using Power BI to uncover insights on customer activity, financial trends, and key performance indicators. It demonstrates data cleaning, transformation, and visualization to support data-driven decision-making.
-📊 Banking Customer Analytics Dashboard
-📌 Business Problem
+# 📊 Banking Analytics Dashboard Portfolio  
+### End-to-End Business Intelligence Projects | Power BI • Tableau • SQL • Excel  
 
-Banks manage large volumes of customer and transaction data. However, raw data alone does not provide meaningful insights for decision-making. The challenge is to transform this data into clear visual insights that help understand customer behavior, financial trends, and overall banking performance.
+## 📌 Overview  
+This repository contains two end-to-end banking analytics projects built using Business Intelligence tools to solve real-world financial analysis problems.
 
-This project builds an interactive Power BI dashboard to analyze banking data and monitor key business metrics.
+The projects focus on:
 
-🎯 Project Objectives
+- Transaction analytics (Credit & Debit Monitoring)
+- Loan performance analytics
+- Risk identification
+- KPI-based performance tracking
+- Interactive dashboard reporting
 
-Analyze banking customer data and financial activity
+These projects demonstrate the complete analytics workflow:
 
-Track important Key Performance Indicators (KPIs)
+**Raw Data → Data Cleaning → SQL Processing → KPI Development → Dashboard Creation → Business Insights**
 
-Identify trends in transactions and account balances
+---
 
-Visualize customer distribution and financial performance
+# 🏦 Project 1: Debit & Credit Banking Analytics Dashboard
 
-Enable data-driven decision making
+## 🎯 Business Problem  
+Banks process thousands of credit and debit transactions daily, making it difficult to monitor:
 
-🛠️ Tools & Technologies
-| Tool        | Purpose                          |
-| ----------- | -------------------------------- |
-| Power BI    | Dashboard development            |
-| Power Query | Data cleaning and transformation |
-| DAX         | Calculations and KPI creation    |
-| Excel / CSV | Data source                      |
+- Overall transaction flow
+- Branch performance
+- Risky transactions
+- Customer activity patterns
+- Credit/Debit balance
 
-📂 Dataset Description
+This project solves these problems through centralized dashboard reporting.
 
-The dataset contains banking-related information including:
+---
 
-Customer ID
+## 📂 Project Files  
 
-Account details
+```text
+Debit-Credit-Banking-Analytics/
+│
+├── Debit & Credit Data Dashboard (Excel).xlsx
+├── Credit & Debit Data Dashboard (Power BI).pbix
+├── Debit & Credit Data Dashboard (Tableau).twbx
+├── Credit & Debit Data (SQL).sql
+└── Final Presentation.pptx
+```
 
-Transaction records
+---
 
-Account balance
+## 📊 Dataset Information  
 
-Customer financial activity
+| Metric | Value |
+|---|---:|
+| Total Rows | 100,000 |
+| Total Columns | 13 |
 
-The data was processed and transformed to ensure accuracy before visualization.
+### Important Columns:
+- Customer ID
+- Account Number
+- Month
+- Transaction Type
+- Amount
+- Balance
+- Branch
+- Transaction Method
+- Bank Name
 
-🔄 Data Cleaning & Transformation
+---
 
-The following steps were performed during data preparation:
+## 📈 Key KPIs  
 
-Removed duplicate records
+### 1. Total Credit Amount  
+Measures total incoming funds.
 
-Handled missing values
+### 2. Total Debit Amount  
+Measures total outgoing funds.
 
-Standardized data formats
+### 3. Credit-to-Debit Ratio  
+Shows financial balance.
 
-Created calculated fields
+Formula:
 
-Structured the data for analysis
+Credit Amount / Debit Amount
 
-Power Query was used to transform raw data into an analysis-ready dataset.
+### 4. Net Transactions  
+Shows net cash flow.
 
-📊 Key Performance Indicators (KPIs)
+Formula:
 
-The dashboard highlights the most important banking metrics:
+Credit Amount - Debit Amount
 
-Total Customers
+### 5. Activity Ratio  
+Measures customer activity against account balance.
 
-Total Transactions
+### 6. Branch Growth Rate  
+Tracks branch transaction growth.
 
-Total Account Balance
+### 7. Transaction Distribution by Branch  
 
-Average Customer Balance
+### 8. Transaction Method Distribution  
 
-Transaction Volume
+### 9. High-Risk Transaction Flag  
 
-Customer Distribution
+Flags suspicious transactions.
 
-These KPIs help evaluate overall banking performance.
+---
 
-📈 Dashboard Features
+## 📊 Dashboard Features  
 
-The dashboard includes several analytical views:
+### Power BI Dashboard
+- KPI cards
+- Trend analysis
+- Branch performance
+- Risk factor analysis
+- Bank-wise comparisons
 
-Customer Analysis
+### Tableau Dashboard
+- Interactive filters
+- Trend visualization
+- Branch growth analysis
 
-Distribution of customers
+### Excel Dashboard
+- Pivot reports
+- Summary dashboards
+- Transaction breakdown
 
-Customer activity trends
+---
+## 📊 Dashboard Preview
+<img width="1920" height="1080" alt="PowerBI Dashboard" src="https://github.com/user-attachments/assets/9c157b3f-6270-4c8c-a18a-fcf551cb4caa" />
+<img width="1920" height="1080" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/92c8e360-c753-4a94-baf5-2ce5cf53ec82" />
 
-Transaction Analysis
 
-Transaction volume trends
 
-Financial activity insights
+## 🔍 Key Business Insights  
 
-Financial Overview
+### Transaction Overview
+- Total Credit: ₹127.60M
+- Total Debit: ₹127.29M
+- Net Positive Cash Flow
 
-Total balances
+### Performance Insights
+- Top Bank: Kotak Mahindra Bank
+- Top Branch: City Center Branch
 
-Key financial performance indicators
+### Transaction Methods
+Balanced distribution:
+- Debit Card (~33%)
+- Credit Card (~33%)
+- Bank Transfer (~33%)
 
-The dashboard is fully interactive and allows users to explore data dynamically.
+### Risk Analysis
+- Normal Transactions: 80K
+- High Risk Transactions: 20K
 
-📷 Dashboard Preview
+⚠ High-risk percentage (20%) is significantly above industry standards.
 
-<img width="1434" height="801" alt="Screenshot 2026-03-07 000648" src="https://github.com/user-attachments/assets/9bff66b5-2bec-4653-bada-a8427ab5d01d" />
+---
 
+## 💡 Recommendations  
 
-Example sections:
+- Improve fraud detection mechanisms
+- Investigate high-risk transactions
+- Monitor underperforming branches
+- Improve transaction anomaly detection
 
-KPI Summary Panel
+---
 
-Transaction Trends
+---
 
-Customer Analysis
+# 💳 Project 2: Bank Loan Analytics Dashboard
 
-Financial Overview
+## 🎯 Business Problem  
+Loan portfolios need continuous monitoring to analyze:
 
-💡 Key Insights
+- Revenue performance
+- Default rates
+- Delinquent loans
+- Customer demographics
+- Loan distribution
 
-From the analysis, the dashboard helps identify:
+This project helps identify lending risks and growth opportunities.
 
-Customer activity patterns
+---
 
-Transaction behavior trends
+## 📂 Project Files  
 
-High-value customer segments
+```text
+Bank-Loan-Analytics/
+│
+├── Bank Loan Data Dashboard (Power BI).pbix
+├── Bank Loan Data Dashboard (Tableau).twbx
+├── Bank Loan Data (SQL).sql
+└── Final Presentation.pptx
+```
 
-Overall banking performance indicators
+---
 
-🚀 Skills Demonstrated
+## 📊 Dataset Information  
 
-This project demonstrates core Data Analyst skills:
+| Metric | Value |
+|---|---:|
+| Total Rows | 66,000+ |
+| Total Columns | 15+ |
 
-Data Cleaning
+### Important Columns:
+- Loan ID
+- Funded Amount
+- Collection
+- Total Interest
+- State
+- Branch
+- Grade
+- Product Group
+- Loan Status
+- Default Flag
+- Delinquent Flag
 
-Data Transformation
+---
 
-Data Visualization
+## 📈 Key KPIs  
 
-Business Intelligence Reporting
+### 1. Total Funded Amount  
 
-KPI Analysis
+Measures total loans funded.
 
-Dashboard Development
+### 2. Total Collection  
 
-Data Storytelling
+Measures recovered amount.
 
-📎 Project File
+### 3. Total Interest  
 
-The Power BI dashboard file is available in this repository named "Bank Analytics.pbix"
+Measures interest earned.
 
+### 4. Total Loans  
 
-Open the file using Power BI Desktop to interact with the dashboard.
+Counts total loans.
 
-📌 Future Improvements
+### 5. Default Rate  
 
-Potential improvements for this project include:
+Default Count / Total Loans
 
-Adding predictive analytics
+### 6. Delinquent Rate  
 
-Customer segmentation analysis
+Delinquent Count / Total Loans
 
-Integration with real-time banking data
+### 7. Default Loan Count  
 
-Advanced financial trend forecasting
+### 8. Delinquent Client Count  
 
-⭐ If you find this project useful, feel free to star the repository.
+### 9. Non-Verified Loan Percentage  
+
+Tracks verification quality.
+
+---
+
+## 📊 Dashboard Features  
+
+### Loan Distribution Analysis
+- State-wise loans
+- Product-wise loans
+- Grade-wise loans
+
+### Risk Analysis
+- Default analysis
+- Delinquency tracking
+
+### Customer Analysis
+- Age group distribution
+- Verification status
+
+---
+
+## 📊 Dashboard Preview
+<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/1493e1cd-c901-4404-80b2-2e81a82e9794" />
+<img width="1920" height="1080" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/f8bfbfd1-c4cc-4e71-84ee-9a255590d482" />
+
+
+## 🔍 Key Business Insights  
+
+### Financial Performance
+- Total Funded: ₹733M
+- Total Collection: ₹808M
+
+Positive collection indicates healthy profitability.
+
+### Risk Performance
+- Default Rate: 1.6%
+- Delinquent Rate: 10.8%
+
+Default is controlled, delinquency needs improvement.
+
+### Market Insights
+- Highest Loan State: Uttar Pradesh
+- Top Revenue Branch: Mathura
+
+### Customer Segment Insights
+Strong concentration in age group:
+
+- 26–35
+- 36–45
+
+These are prime borrowing customers.
+
+---
+
+## 💡 Recommendations  
+
+- Reduce delinquent loan percentage
+- Strengthen loan verification process
+- Improve credit checks
+- Focus on profitable branches
+- Expand in high-performing states
+
+---
+
+# ⚙️ Tools & Technologies Used  
+
+| Category | Tools |
+|---|---|
+| Data Visualization | Power BI, Tableau |
+| Data Cleaning | Excel |
+| Database | MySQL |
+| Reporting | Excel Dashboards |
+| Querying | SQL |
+| KPI Modeling | DAX, Tableau Calculations |
+
+---
+
+# 🔄 Project Workflow  
+
+## Step 1: Data Collection  
+Collected structured banking datasets.
+
+## Step 2: Data Cleaning  
+Handled:
+- Missing values
+- Duplicates
+- Formatting issues
+
+## Step 3: SQL Analysis  
+Built SQL scripts for data transformation and KPI extraction.
+
+## Step 4: Dashboard Development  
+Created dashboards in:
+- Power BI
+- Tableau
+- Excel
+
+## Step 5: Business Insights  
+Generated strategic recommendations based on findings.
+
+---
+
+# 📸 Dashboard Screenshots  
+
+## Debit & Credit Analytics Dashboard
+(Add screenshots here)
+
+## Bank Loan Analytics Dashboard
+(Add screenshots here)
+
+---
+
+# 🎯 Skills Demonstrated  
+
+- Data Cleaning  
+- Data Modeling  
+- SQL Query Writing  
+- Dashboard Design  
+- KPI Development  
+- Data Visualization  
+- Business Analysis  
+- Risk Analysis  
+- Financial Analytics  
+
+---
+
+# 📈 Business Impact  
+
+✔ Improved financial visibility  
+✔ Better risk monitoring  
+✔ Branch performance tracking  
+✔ Loan portfolio analysis  
+✔ Fraud detection insights  
+✔ Data-driven decision-making support  
+
+---
+
+# 🚀 Future Enhancements  
+
+- Machine Learning for fraud prediction  
+- Loan default prediction models  
+- Real-time dashboard integration  
+- Automated ETL pipelines  
+- Advanced customer segmentation  
+
+---
+
+# 👨‍💻 Author  
+
+**Johns M**  
+Aspiring Data Analyst  
+
+Skills:
+- Power BI  
+- SQL  
+- Tableau  
+- Excel  
+- Business Intelligence  
+
+---
+
+# ⭐ Support  
+
+If you found these projects useful, consider giving this repository a ⭐.
